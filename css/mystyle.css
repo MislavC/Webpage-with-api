@@ -1,0 +1,258 @@
+/**all*/
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/**html*/
+html {
+    scroll-padding-top: 30px;
+    scroll-behavior: smooth;
+}
+
+/**body, nice font*/
+body {
+    overflow-x: hidden;
+    font-family: 'Montserrat';
+    background-color: #ec9a03;
+
+
+}
+
+
+
+/**title*/
+#section-hero {
+    text-align: center;
+    padding-top: 10px;
+    color: rgb(0, 0, 0);
+    font-size: 70px;
+    padding-left: -100px;
+
+
+}
+
+
+/**for h1 title*/
+h1 {
+    margin-bottom: 15px;
+}
+
+/**for h3 title*/
+h3 {
+    margin-top: 32px;
+}
+
+
+
+/**for about data*/
+#section-about {
+    background-color: #ffffff;
+    padding: 20px;
+    color: rgb(0, 0, 0);
+
+}
+
+/**for about data*/
+#section-about h2 {
+    text-align: center;
+
+}
+
+/**for news data*/
+#section-news {
+    background-color: #ec9a03;
+    padding: 15px;
+    color: white;
+}
+
+/**for faculty data*/
+#section-faculty {
+    background-color: #ec9a03;
+    padding: 15px;
+    color: rgb(0, 0, 0);
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 12px;
+
+}
+
+
+/** for aligning images*/
+.all {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/**for faculty img*/
+#section-faculty img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+
+}
+
+/**for undergraduate data*/
+#section-undergraduate {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+
+}
+
+/**for graduate data*/
+#section-graduate {
+    background-color: #ec9a03;
+    padding: 15px;
+    color: rgb(0, 0, 0);
+}
+
+/**for coopTable data*/
+#section-coopTable {
+    background-color: #ffffff;
+    padding: 15px;
+    color: rgb(0, 0, 0);
+}
+
+/**for employmentTable data*/
+#section-employmentTable {
+    background-color: #ffffff;
+    padding: 15px;
+    color: rgb(0, 0, 0);
+}
+
+
+
+/**navigation*/
+a {
+    background-color: none;
+    color: rgb(255, 255, 255);
+    justify-content: space-between;
+    text-decoration: none;
+    gap: 100px;
+
+}
+
+/**links when hovered change color*/
+a:hover {
+    color: #b00d0d;
+    justify-content: space-between;
+}
+
+/**
+*
+*Navigation
+**/
+nav {
+    display: flex;
+    position: sticky;
+    justify-content: space-between;
+    padding: 0 20px;
+    padding-top: 12px;
+    gap: 50px;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    top: 0;
+    cursor: pointer;
+    scroll-behavior: smooth;
+    transition: top 0.3s;
+    z-index: 1;
+}
+
+#nav-list {
+    gap: 20;
+    padding-left: 120px;
+    align-items: center;
+    word-spacing: 40px;
+    font-size: larger;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+
+
+/**media query*/
+@media(max-width:768px) {
+
+
+    /**
+*title
+*/
+    #section-hero {
+        overflow: hidden;
+        background-color: #333;
+        position: relative;
+
+
+    }
+
+    a {
+        /**links in navigation*/
+        background-color: none;
+        color: white;
+        justify-content: space-between;
+        text-decoration: none;
+        gap: 100px;
+
+    }
+
+    /**links when hovered change color*/
+    a:hover {
+        color: #fc7100;
+        justify-content: space-between;
+    }
+
+    /**
+*
+*Navigation
+**/
+    nav {
+        display: table-row;
+        position: sticky;
+        justify-content: space-between;
+        padding: 0 20px;
+        padding-top: 8px;
+        gap: 20px;
+        align-items: center;
+        background-color: rgb(48, 43, 43);
+        top: 0;
+        z-index: 1;
+    }
+
+
+}
+
+
+
+
+/*media querry*/
+@media only screen and (max-width: 750px) {
+
+
+    body {
+        overflow-x: hidden;
+    }
+
+    #section-faculty {
+        width: 300px;
+
+    }
+
+
+    #section-faculty img {
+        width: 150px;
+        height: 150px;
+        vertical-align: middle;
+        margin: 20px;
+
+
+    }
+
+}
+
+/**copyright*/
+.back {
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
